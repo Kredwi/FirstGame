@@ -1,0 +1,100 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+a, a:hover, a:active {
+    color: white;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    height: 70px;
+    width: 70px;
+}
+
+body {
+    background-color: #272727;
+    padding: 2%;
+    margin: 2%;
+}
+
+#player {
+    position: relative;
+    z-index: 4;
+}
+
+#item {
+    position: relative;
+    padding-left: -70px;
+    margin-left: -70px;
+}
+
+#gameZone {
+    background-color: #1a1a1a;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    border-right: 70px solid #1a1a1a;
+    border-bottom: 70px solid #1a1a1a;
+}
+
+#score {
+    color: white;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 500;
+}
+
+#gamePanel {
+    background-color: #1b1a1a;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    padding: 1%;
+    margin: 1%;
+    z-index: 5000;
+}
+
+#restScore {
+    background-color: #1f1f2200;
+    border: 0;
+    border-radius: 0;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#controls {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 4999;
+}
+
+.buttonControl {
+    color: white;
+    background-color: #1a1a1a;
+    border: 5 solid #000000;
+    border-radius: 0;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    flex-wrap: wrap;
+    display: fixed;
+}
+
+.buttonControl:first-child {
+    order: -1;
+    position: relative;
+    bottom: 50px;
+    position: relative;
+    left: 100px;
+}

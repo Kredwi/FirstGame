@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Игра</title>
+</head>
+<body>
+    <div id="gameZone">
+        <img src="player.png" id="player" alt="not">
+        <img src="emodji.gif" id="item" alt="not">
+    </div>
+    <div id="gamePanel">
+        <span id="score"></span>
+        <br>
+        <a href="http://github.com/Kredwi/FirstGame" target="_blank">GitHub</a>
+        <br>
+        <button type="button" id="restScore" onclick="resetScore()">УДАЛИТЬ СЧЕТ</button>
+    </div>
+    <div id="controls">
+        <button class="buttonControl" id="KeyW">W</button>
+        <button class="buttonControl" id="KeyA">A</button>
+        <button class="buttonControl" id="KeyS">S</button>
+        <button class="buttonControl" id="KeyD">D</button>
+    </div>
+    <noscript>NO JS OFF</noscript>
+    <script src="index.js"></script>
+</body>
+</html>
