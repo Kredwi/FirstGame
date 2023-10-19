@@ -5,9 +5,9 @@
 
 a, a:hover, a:active {
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 24px;
     font-style: normal;
     text-decoration: none;
     cursor: pointer;
@@ -42,14 +42,7 @@ body {
     margin: auto;
     border-right: 70px solid #1a1a1a;
     border-bottom: 70px solid #1a1a1a;
-}
-
-#score {
-    color: white;
-    font-size: 24px;
-    font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
-    z-index: 500;
+    box-shadow: 2px 5px 4px 5px #1a1a1a7e;
 }
 
 #gamePanel {
@@ -60,6 +53,15 @@ body {
     padding: 1%;
     margin: 1%;
     z-index: 5000;
+    box-shadow: 2px 2px 2px 1px #000000;
+}
+
+#score {
+    color: white;
+    font-size: 32px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 500;
 }
 
 #restScore {
@@ -77,6 +79,8 @@ body {
     justify-content: flex-start;
     align-items: center;
     z-index: 4999;
+    position: absolute;
+    bottom: 50%;
 }
 
 .buttonControl {
@@ -95,6 +99,38 @@ body {
     order: -1;
     position: relative;
     bottom: 50px;
-    position: relative;
     left: 100px;
+}
+
+#resetButton {
+    position: relative;
+    top: 50px;
+    right: 150px;
+    width: 150px;
+    font-size: 24px;
+}
+
+#time {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#defeatMessage {
+    color: red;
+    text-align: center;
+    display: none;
+}
+
+#resetPlayerBtn {
+    color: white;
+    background-color: #1a1a1a;
+    border: 5 solid #000000;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-wrap: wrap;
+    display: none;
 }

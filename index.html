@@ -7,14 +7,18 @@
     <title>Игра</title>
 </head>
 <body>
+    <h1 id="defeatMessage"></h1>
     <div id="gameZone">
-        <img src="player.png" id="player" alt="not">
-        <img src="emodji.gif" id="item" alt="not">
+        <img src="emodji.gif" id="player" alt="not">
+        <img src="player.png" id="item" alt="not">
     </div>
     <div id="gamePanel">
-        <span id="score"></span>
+        <p id="score"></p>
         <br>
         <a href="http://github.com/Kredwi/FirstGame" target="_blank">GitHub</a>
+        <br>
+        <span id="time">Загрузка...</span>
+        <button onclick="respawnPlayer()" id="resetPlayerBtn">ВОЗРОДИТЬ</button>
         <br>
         <button type="button" id="restScore" onclick="resetScore()">УДАЛИТЬ СЧЕТ</button>
     </div>
@@ -23,6 +27,7 @@
         <button class="buttonControl" id="KeyA">A</button>
         <button class="buttonControl" id="KeyS">S</button>
         <button class="buttonControl" id="KeyD">D</button>
+        <button class="buttonControl" id="resetButton" onclick="resetButton()">ВЕРНУТЬ</button>
     </div>
     <noscript>NO JS OFF</noscript>
     <script src="index.js"></script>
